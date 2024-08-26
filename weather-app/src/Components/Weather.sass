@@ -1,0 +1,43 @@
+.Weather
+	max-width: 600px
+	margin: 0 auto
+
+	.weather-header
+		background-color: #ffffff
+		padding: 20px
+		border-radius: 10px
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+
+	.weather-details
+		text-align: left
+
+	.name
+		font-size: 2em
+		font-weight: bold
+		margin: 10px 0
+		color: #333
+
+	.detail
+		font-size: 1.2em
+		margin: 5px 0
+		color: #555
+
+	.degree
+		font-size: 3em
+		margin: 10px 0
+		font-weight: 300
+		color: #ff6347
+
+	.weather-icon-container
+		display: flex
+		justify-content: center
+		align-items: center
+
+	.weather-icon
+		width: 100px
+		height: 100px
+
+@media (max-width: 576px)
+	.Weather
+		.weather-icon-container
+			margin-top: 20px
