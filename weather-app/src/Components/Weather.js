@@ -11,7 +11,7 @@ const api = {
 const Weather = () => {
   const [weather, setWeather] = useState({});
   const [forecast, setForecast] = useState([]);
-  const CITY_NAME = 'Madrid';
+  const CITY_NAME = 'Ankara';
 
   useEffect(() => {
     const fetchWeatherData = async () => {

@@ -1,5 +1,5 @@
 import { Row } from 'antd';
-import './App.css';
+import './App.sass';
 
 import Layout from './Layout';
 function App() {

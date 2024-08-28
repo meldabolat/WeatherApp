@@ -1,0 +1,65 @@
+.Cities
+  max-width: 1200px
+  margin: 0 auto
+  padding: 20px
+
+  h2
+    color: var(--primary-text-color)
+    font-size: 2em
+    text-align: center
+    margin-bottom: 30px
+
+  .city-weather-card
+    background-color: var(--card-bg-color)
+    color: var(--primary-text-color)
+    padding: 20px
+    border-radius: 10px
+    text-align: center
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+    
+    .city-name
+      font-size: 1.5em
+      margin-bottom: 10px
+      color: var(--primary-text-color)
+
+    .weather-description
+      font-size: 1.2em
+      margin-bottom: 10px
+      color: var(--secondary-text-color)
+
+    .temperature
+      font-size: 2.5em
+      margin: 10px 0
+      color: var(--primary-text-color)
+
+    .weather-icon-container
+      margin: 10px 0
+
+    .weather-icon
+      width: 80px
+      height: 80px
+
+    .additional-info
+      font-size: 1em
+      color: var(--secondary-text-color)
+
+// Tema değişkenleri
+\:root
+  // Light Mode
+  --primary-bg-color: #ffffff
+  --primary-text-color: #333333
+  --secondary-text-color: #666666
+  --card-bg-color: #f0f0f0
+
+[data-theme='dark']
+  // Dark Mode
+  --primary-bg-color: #1E213A
+  --primary-text-color: #E7E7EB
+  --secondary-text-color: #A09FB1
+  --card-bg-color: #2E2E3E
+
+// Global stiller
+body
+  background-color: var(--primary-bg-color)
+  color: var(--primary-text-color)
+  font-family: Arial, sans-serif

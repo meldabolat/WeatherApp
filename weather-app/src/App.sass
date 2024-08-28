@@ -1,0 +1,49 @@
+:root
+  // Light Mode
+  --primary-bg-color: #ffffff
+  --primary-text-color: #000000
+  --secondary-bg-color: #bab7ee
+  --card-bg-color: #bab7ee !important
+  --input-bg-color: #ffffff
+  --input-text-color: #000000
+  --button-bg-color: #ff6347
+  --button-hover-bg-color: #ff4500
+  --header-color: #ffcb42
+
+[data-theme='dark']
+  // Dark Mode
+  --primary-bg-color: #1e1e2e
+  --primary-text-color: #ffffff
+  --secondary-bg-color: #2e2e3e
+  --card-bg-color: #2e2e3e
+  --input-bg-color: #3e3e5e
+  --input-text-color: #ffffff
+  --button-bg-color: #ff6347
+  --button-hover-bg-color: #ff4500
+  --header-color: #ffcb42
+
+// Tüm bileşenlerde bu değişkenleri kullanın
+body
+  background-color: var(--primary-bg-color)
+  color: var(--primary-text-color)
+
+// SASS'ın avantajlarını kullanarak, tema değişkenlerini bir mixin içinde toplayabiliriz
+=theme-variables
+  background-color: var(--primary-bg-color)
+  color: var(--primary-text-color)
+
+// Örnek kullanım
+.some-component
+  +theme-variables
+  
+  .card
+    background-color: var(--card-bg-color)
+
+  input
+    background-color: var(--input-bg-color)
+    color: var(--input-text-color)
+
+  button
+    background-color: var(--button-bg-color)
+    &:hover
+      background-color: var(--button-hover-bg-color)

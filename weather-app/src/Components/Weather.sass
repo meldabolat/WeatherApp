@@ -1,26 +1,35 @@
-$background-color: #1e1e2e
-$card-background: #2b2b3d
-$text-color: #ffffff
-$subtext-color: #a3a3c2
+// Tema değişkenleri
+\:root
+  --background-color: #ffffff
+  --card-background: #bab7ee
+  --text-color: #000000
+  --subtext-color: #666666
+
+[data-theme='dark']
+  --background-color: #1e1e2e
+  --card-background: #2b2b3d
+  --text-color: #ffffff
+  --subtext-color: #a3a3c2
 
 .Weather
-  background-color: $background-color
-  color: $text-color
+  background-color: var(--background-color)
+  color: var(--text-color)
   padding: 20px
   font-family: Arial, sans-serif
 
   .weather-header
-    background-color: $card-background
+    background-color: var(--card-background)
     padding: 20px
     border-radius: 10px
     margin-bottom: 20px
+	
 
     .name
       font-size: 2.5em
       margin-bottom: 5px
 
     .chance-of-rain
-      color: $subtext-color
+      color: var(--subtext-color)
       margin-bottom: 10px
 
     .degree
@@ -28,14 +37,14 @@ $subtext-color: #a3a3c2
       font-weight: bold
 
   .today-forecast, .air-conditions, .five-day-forecast
-    background-color: $card-background
+    background-color: var(--card-background)
     padding: 20px
     border-radius: 10px
     margin-bottom: 20px
 
     h2
       margin-bottom: 15px
-      color: $subtext-color
+      color: var(--subtext-color)
 
   .forecast-hours, .conditions-grid
     display: flex
@@ -55,7 +64,7 @@ $subtext-color: #a3a3c2
   .conditions-grid
     .condition
       p:first-child
-        color: $subtext-color
+        color: var(--subtext-color)
         margin-bottom: 5px
       p:last-child
         font-size: 1.2em
@@ -73,7 +82,7 @@ $subtext-color: #a3a3c2
         margin-bottom: 10px
         
         p
-          margin: 5px 0
+          margin: 10px 0
 
         img
           width: 50px
